@@ -1,0 +1,16 @@
+.item {
+	padding: 20px;
+	margin: 5px;
+	border: 2px solid rgba(227, 186, 234, 0.5);
+}
+.item-title {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #445ba2;
+}
+.item-price {
+	border-bottom: .5px solid rgba(239, 6, 6, 0.6);
+}
+.item-link a {
+	text-decoration: none;
+}

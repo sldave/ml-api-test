@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+	<input type="text" placeholder="Search..." #userStringSearch>
+	<button (click)="goSearch(userStringSearch)">Go!</button>
+</div>
+
+<div *ngIf="isDone">
+	<div class="item" *ngFor="let item of data['results']">
+		<!-- LIST OF ITEMS -->
+		<p class="item-title">{{item.title}}</p>
+		<pre class="item-price">Price: {{ac.formatMoney(item.price, "BsF ", 2, ".", ",")}}</pre>
+		<p class="item-link">Store link: <a [href]="item.permalink"><+></a></p>
+	</div>
+</div>
